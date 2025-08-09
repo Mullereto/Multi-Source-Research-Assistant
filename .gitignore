@@ -1,0 +1,5 @@
+*.bin
+*.sqlite3
+*.json
+*.docx
+*.pdf
