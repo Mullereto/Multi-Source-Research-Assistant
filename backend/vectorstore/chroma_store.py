@@ -2,9 +2,9 @@ import os
 import chromadb
 from chromadb.utils import embedding_functions
 
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="all-MiniLM-L6-v2")
+embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name="sentence-transformers/all-MiniLM-L12-v2")
 
-CHROMA_PATH = os.path.join(r"data\processed", "chroma_db") 
+CHROMA_PATH = os.path.join(r"D:\project\Python\DL(Mostafa saad)\Project\Multi-Source-Research-Assistant\data\processed\chroma_db") 
 client = chromadb.PersistentClient(path=CHROMA_PATH)
 
 collection = client.get_or_create_collection(
