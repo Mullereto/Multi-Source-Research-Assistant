@@ -1,0 +1,29 @@
+A. Chat UI Layout
+
+    Left: chat messages (user + AI).
+
+    Right (optional): sources panel.
+
+    Bottom: message input + upload button.
+
+B. Typing Indicator
+
+    Show animated dots while waiting for backend.
+
+    Hide when response finishes streaming.
+
+C. Inline Citations
+
+    Parse [n] markers in AI answer.
+
+    On click → show modal with snippet & “Open Source” link.
+
+D. Feedback Buttons
+
+    On hover of AI message → show 👍 / 👎.
+
+    Send feedback to /feedback API.
+
+E. Export Chat as PDF
+
+    Use pdfmake or jsPDF in frontend to save conversation.
